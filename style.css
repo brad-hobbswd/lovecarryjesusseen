@@ -148,3 +148,217 @@ a:focus-visible {
   background: var(--gold);
   color: white;
 }
+
+/* ==================================================
+   Book Description & Contents
+================================================== */
+.book-description {
+  margin-bottom: 60px;
+}
+.contents-preview {
+  margin-bottom: 40px;
+}
+.contents-preview h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+.contents-preview ul {
+  list-style: none;
+  padding: 0;
+}
+.contents-preview li {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-light);
+}
+.contents-preview li:last-child {
+  border-bottom: none;
+}
+/* ==================================================
+   Images
+================================================== */
+img {
+  max-width: 100%;
+  height: auto;
+}
+.book-cover {
+  width: 100%;
+  max-width: 450px;
+  display: block;
+  margin: 0 auto 40px auto;
+  border-radius: 12px;
+  box-shadow: 0 12px 35px var(--shadow-dark);
+}
+.book-banner {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 12px 35px var(--shadow-dark);
+}
+/* ==================================================
+   Blockquotes
+================================================== */
+blockquote {
+  border-left: 5px solid var(--gold);
+  padding-left: 25px;
+  margin: 35px 0;
+  color: var(--text-medium);
+  font-style: italic;
+}
+/* ==================================================
+   Tables
+================================================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px 0;
+}
+th,
+td {
+  padding: 14px;
+  border: 1px solid var(--border-medium);
+}
+th {
+  background: var(--primary-navy);
+  color: white;
+}
+/* ==================================================
+   Selection
+================================================== */
+::selection {
+  background: var(--gold);
+  color: white;
+}
+::-moz-selection {
+  background: var(--gold);
+  color: white;
+}
+/* ==================================================
+   Footer
+================================================== */
+footer {
+  background: var(--deep-navy);
+  color: white;
+  text-align: center;
+  padding: 70px 25px;
+  margin-top: 80px;
+  border-top: 4px solid var(--gold);
+}
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer-content::before {
+  content: "✦";
+  display: block;
+  color: var(--gold);
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+footer h3 {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+footer nav {
+  margin: 35px 0;
+}
+footer nav a {
+  color: var(--light-gold);
+  margin: 0 15px;
+  font-weight: 600;
+}
+footer nav a:hover {
+  color: white;
+}
+.footer-scripture {
+  color: var(--light-gold);
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer-divider {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+  max-width: 250px;
+  margin: 35px auto;
+}
+.copyright {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+/* ==================================================
+   Responsive Design
+================================================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 1rem;
+  }
+  .book-container,
+  .chapter-container {
+    padding: 20px 15px;
+  }
+  .chapter-content,
+  .book-description,
+  .contents-preview {
+    padding: 30px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .chapter-navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .chapter-navigation a {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  .book-navigation,
+  .chapter-navigation {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .book-navigation a,
+  .chapter-navigation a {
+    width: 100%;
+    text-align: center;
+  }
+  .chapter-content,
+  .book-description,
+  .contents-preview {
+    padding: 25px;
+  }
+  footer nav a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 1400px) {
+  .book-container,
+  .chapter-container {
+    max-width: 1200px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
