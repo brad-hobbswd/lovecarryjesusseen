@@ -1,864 +1,150 @@
 /* ==================================================
    What Love Was Carrying
    Because Jesus Saw Everything
-   book.css
+   style.css
 ================================================== */
-
+/* ==================================================
+   Variables
+================================================== */
 :root {
-
   --primary-navy: #183A6B;
   --deep-navy: #102847;
-
   --gold: #C8A05A;
   --soft-gold: #D9BC7A;
   --light-gold: #E9D9B2;
-
   --ivory: #FAF7F2;
   --warm-white: #F5F1EA;
-
   --text-dark: #2B2B2B;
   --text-medium: #555555;
-
   --border-light: #E4DDD1;
   --border-medium: #D4CAB8;
-
   --shadow: rgba(0, 0, 0, 0.12);
   --shadow-dark: rgba(0, 0, 0, 0.25);
-
 }
-
 /* ==================================================
-   Base
+   Reset
 ================================================== */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
-
 body {
-
   background: var(--ivory);
-
   color: var(--text-dark);
-
   font-family: Georgia, "Times New Roman", serif;
-
-  line-height: 1.95;
-
   font-size: 1.1rem;
-
-}
-
-/* ==================================================
-   Layout
-================================================== */
-
-.chapter-container {
-
-  max-width: 900px;
-
-  margin: 0 auto;
-
-  padding: 60px 25px;
-
-}
-
-.chapter-content {
-
-  background: var(--warm-white);
-
-  padding: 60px;
-
-  border-radius: 12px;
-
-  box-shadow: 0 8px 30px var(--shadow);
-
-}
-
-/* ==================================================
-   What Love Was Carrying
-   Because Jesus Saw Everything
-   book.css
-================================================== */
-
-:root {
-
-  --primary-navy: #183A6B;
-  --deep-navy: #102847;
-
-  --gold: #C8A05A;
-  --soft-gold: #D9BC7A;
-  --light-gold: #E9D9B2;
-
-  --ivory: #FAF7F2;
-  --warm-white: #F5F1EA;
-
-  --text-dark: #2B2B2B;
-  --text-medium: #555555;
-
-  --border-light: #E4DDD1;
-  --border-medium: #D4CAB8;
-
-  --shadow: rgba(0, 0, 0, 0.12);
-  --shadow-dark: rgba(0, 0, 0, 0.25);
-
-}
-
-/* ==================================================
-   Base
-================================================== */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-
-  background: var(--ivory);
-
-  color: var(--text-dark);
-
-  font-family: Georgia, "Times New Roman", serif;
-
   line-height: 1.95;
-
-  font-size: 1.1rem;
-
 }
-
 /* ==================================================
-   Layout
+   General Layout
 ================================================== */
-
+.book-container,
 .chapter-container {
-
-  max-width: 900px;
-
+  max-width: 1100px;
   margin: 0 auto;
-
-  padding: 60px 25px;
-
+  padding: 40px 25px;
 }
-
-.chapter-content {
-
+.chapter-content,
+.book-description,
+.contents-preview {
   background: var(--warm-white);
-
-  padding: 60px;
-
   border-radius: 12px;
-
+  padding: 50px;
   box-shadow: 0 8px 30px var(--shadow);
-
 }
-
 /* ==================================================
    Typography
 ================================================== */
-
 h1 {
-
   color: var(--primary-navy);
-
   text-align: center;
-
   font-size: 3rem;
-
   margin-bottom: 15px;
-
-  letter-spacing: 1px;
-
 }
-
 h2 {
-
   color: var(--gold);
-
   text-align: center;
-
   font-size: 2rem;
-
-  margin-bottom: 50px;
-
+  margin-bottom: 40px;
   font-weight: normal;
-
 }
-
 h3 {
-
   color: var(--primary-navy);
-
   margin-bottom: 20px;
-
 }
-
 p {
-
   margin-bottom: 28px;
-
-  color: var(--text-dark);
-
+  max-width: 75ch;
 }
-
 /* ==================================================
    Links
 ================================================== */
-
 a {
-
   color: var(--primary-navy);
-
   text-decoration: none;
-
-  transition: 0.3s ease;
-
+  transition: all 0.3s ease;
 }
-
 a:hover {
-
   color: var(--gold);
-
 }
-
+a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
 /* ==================================================
-   Lists
+   Homepage Banner
 ================================================== */
-
-ol,
-ul {
-
-  padding-left: 30px;
-
+.hero-banner {
+  text-align: center;
+  margin-bottom: 60px;
 }
-
-li {
-
-  margin-bottom: 15px;
-
-}
-
-/* ==================================================
-   Navigation
-================================================== */
-
-.chapter-navigation {
-
-  display: flex;
-
-  justify-content: space-between;
-
-  align-items: center;
-
-  margin-top: 50px;
-
-  padding-top: 30px;
-
-  border-top: 1px solid var(--border-medium);
-
-}
-
-.chapter-navigation a {
-
-  background: var(--primary-navy);
-
-  color: white;
-
-  padding: 12px 22px;
-
-  border-radius: 8px;
-
-  font-weight: 600;
-
-  box-shadow: 0 4px 10px var(--shadow);
-
-}
-
-.chapter-navigation a:hover {
-
-  background: var(--gold);
-
-  color: white;
-
-}
-
-/* ==================================================
-   Book Banner
-================================================== */
-
-.book-banner {
-
+.hero-image {
   width: 100%;
-
+  height: 55vh;
+  min-height: 300px;
+  max-height: 700px;
+  object-fit: cover;
+  object-position: center center;
   display: block;
-
   border-radius: 12px;
-
-  margin-bottom: 40px;
-
-  box-shadow: 0 10px 30px var(--shadow-dark);
-
-}
-
-/* ==================================================
-   Cover Image
-================================================== */
-
-.book-cover {
-
-  max-width: 400px;
-
-  width: 100%;
-
-  display: block;
-
-  margin: 0 auto 40px auto;
-
-  border-radius: 12px;
-
   box-shadow: 0 12px 35px var(--shadow-dark);
-
 }
-
+.hero-intro {
+  margin: 35px auto;
+  max-width: 850px;
+}
 /* ==================================================
-   Blockquotes
+   Navigation Buttons
 ================================================== */
-
-blockquote {
-
-  border-left: 5px solid var(--gold);
-
-  padding-left: 25px;
-
-  margin: 35px 0;
-
-  color: var(--text-medium);
-
-  font-style: italic;
-
-}
-
-/* ==================================================
-   Tables
-================================================== */
-
-table {
-
-  width: 100%;
-
-  border-collapse: collapse;
-
-  margin: 30px 0;
-
-}
-
-th,
-td {
-
-  padding: 14px;
-
-  border: 1px solid var(--border-medium);
-
-}
-
-th {
-
-  background: var(--primary-navy);
-
-  color: white;
-
-}
-
-/* ==================================================
-   Footer
-================================================== */
-
-footer {
-
-  background: var(--deep-navy);
-
-  color: white;
-
-  text-align: center;
-
-  padding: 70px 25px;
-
-  margin-top: 80px;
-
-}
-
-.footer-content {
-
-  max-width: 900px;
-
-  margin: 0 auto;
-
-}
-
-footer h3 {
-
-  color: white;
-
-  font-size: 2rem;
-
-  margin-bottom: 15px;
-
-}
-
-footer nav {
-
-  margin: 30px 0;
-
-}
-
-footer nav a {
-
-  color: var(--light-gold);
-
-  margin: 0 12px;
-
-  font-weight: 600;
-
-}
-
-footer nav a:hover {
-
-  color: white;
-
-}
-
-.footer-scripture {
-
-  color: var(--light-gold);
-
-  font-style: italic;
-
-  margin-top: 30px;
-
-}
-
-.copyright {
-
-  margin-top: 35px;
-
-  font-size: 0.9rem;
-
-  opacity: 0.85;
-
-}
-
-/* ==================================================
-   Mobile
-================================================== */
-
-@media (max-width: 768px) {
-
-  .chapter-container {
-
-    padding: 25px 15px;
-
-  }
-
-  .chapter-content {
-
-    padding: 30px;
-
-  }
-
-  h1 {
-
-    font-size: 2.2rem;
-
-  }
-
-  h2 {
-
-    font-size: 1.5rem;
-
-  }
-
-  .chapter-navigation {
-
-    flex-direction: column;
-
-    gap: 15px;
-
-  }
-
-  .chapter-navigation a {
-
-    width: 100%;
-
-    text-align: center;
-
-  }
-
-}
-
-
-/* ==================================================
-   Typography
-================================================== */
-
-h1 {
-
-  color: var(--primary-navy);
-
-  text-align: center;
-
-  font-size: 3rem;
-
-  margin-bottom: 15px;
-
-  letter-spacing: 1px;
-
-}
-
-h2 {
-
-  color: var(--gold);
-
-  text-align: center;
-
-  font-size: 2rem;
-
-  margin-bottom: 50px;
-
-  font-weight: normal;
-
-}
-
-h3 {
-
-  color: var(--primary-navy);
-
-  margin-bottom: 20px;
-
-}
-
-p {
-
-  margin-bottom: 28px;
-
-  color: var(--text-dark);
-
-}
-
-/* ==================================================
-   Links
-================================================== */
-
-a {
-
-  color: var(--primary-navy);
-
-  text-decoration: none;
-
-  transition: 0.3s ease;
-
-}
-
-a:hover {
-
-  color: var(--gold);
-
-}
-
-/* ==================================================
-   Lists
-================================================== */
-
-ol,
-ul {
-
-  padding-left: 30px;
-
-}
-
-li {
-
-  margin-bottom: 15px;
-
-}
-
-/* ==================================================
-   Navigation
-================================================== */
-
+.book-navigation,
 .chapter-navigation {
-
   display: flex;
-
-  justify-content: space-between;
-
+  justify-content: center;
   align-items: center;
-
-  margin-top: 50px;
-
-  padding-top: 30px;
-
-  border-top: 1px solid var(--border-medium);
-
-}
-
-.chapter-navigation a {
-
-  background: var(--primary-navy);
-
-  color: white;
-
-  padding: 12px 22px;
-
-  border-radius: 8px;
-
-  font-weight: 600;
-
-  box-shadow: 0 4px 10px var(--shadow);
-
-}
-
-.chapter-navigation a:hover {
-
-  background: var(--gold);
-
-  color: white;
-
-}
-
-/* ==================================================
-   Book Banner
-================================================== */
-
-.book-banner {
-
-  width: 100%;
-
-  display: block;
-
-  border-radius: 12px;
-
-  margin-bottom: 40px;
-
-  box-shadow: 0 10px 30px var(--shadow-dark);
-
-}
-
-/* ==================================================
-   Cover Image
-================================================== */
-
-.book-cover {
-
-  max-width: 400px;
-
-  width: 100%;
-
-  display: block;
-
-  margin: 0 auto 40px auto;
-
-  border-radius: 12px;
-
-  box-shadow: 0 12px 35px var(--shadow-dark);
-
-}
-
-/* ==================================================
-   Blockquotes
-================================================== */
-
-blockquote {
-
-  border-left: 5px solid var(--gold);
-
-  padding-left: 25px;
-
-  margin: 35px 0;
-
-  color: var(--text-medium);
-
-  font-style: italic;
-
-}
-
-/* ==================================================
-   Tables
-================================================== */
-
-table {
-
-  width: 100%;
-
-  border-collapse: collapse;
-
-  margin: 30px 0;
-
-}
-
-th,
-td {
-
-  padding: 14px;
-
-  border: 1px solid var(--border-medium);
-
-}
-
-th {
-
-  background: var(--primary-navy);
-
-  color: white;
-
-}
-
-/* ==================================================
-   Footer
-================================================== */
-
-footer {
-
-  background: var(--deep-navy);
-
-  color: white;
-
-  text-align: center;
-
-  padding: 70px 25px;
-
-  margin-top: 80px;
-
-}
-
-.footer-content {
-
-  max-width: 900px;
-
-  margin: 0 auto;
-
-}
-
-footer h3 {
-
-  color: white;
-
-  font-size: 2rem;
-
-  margin-bottom: 15px;
-
-}
-
-footer nav {
-
-  margin: 30px 0;
-
-}
-
-footer nav a {
-
-  color: var(--light-gold);
-
-  margin: 0 12px;
-
-  font-weight: 600;
-
-}
-
-footer nav a:hover {
-
-  color: white;
-
-}
-
-.footer-scripture {
-
-  color: var(--light-gold);
-
-  font-style: italic;
-
+  gap: 20px;
+  flex-wrap: wrap;
   margin-top: 30px;
-
 }
-
-.copyright {
-
-  margin-top: 35px;
-
-  font-size: 0.9rem;
-
-  opacity: 0.85;
-
+.chapter-navigation {
+  justify-content: space-between;
+  padding-top: 30px;
+  border-top: 1px solid var(--border-medium);
 }
-
-/* ==================================================
-   Responsive Design
-================================================== */
-@media (max-width: 768px) {
-  body {
-    font-size: 1rem;
-  }
-  .book-container,
-  .chapter-container {
-    padding: 20px 15px;
-  }
-  .chapter-content,
-  .book-description,
-  .contents-preview {
-    padding: 30px;
-  }
-  h1 {
-    font-size: 2.2rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  .hero-intro {
-    font-size: 1rem;
-  }
-  .chapter-navigation {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .chapter-navigation a {
-    width: 100%;
-    text-align: center;
-  }
+.book-navigation a,
+.chapter-navigation a {
+  background: var(--primary-navy);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 4px 10px var(--shadow);
 }
-@media (max-width: 480px) {
-  h1 {
-    font-size: 1.9rem;
-  }
-  h2 {
-    font-size: 1.25rem;
-  }
-  .book-navigation,
-  .chapter-navigation {
-    flex-direction: column;
-    gap: 15px;
-  }
-  .book-navigation a,
-  .chapter-navigation a {
-    width: 100%;
-    text-align: center;
-  }
-  .chapter-content,
-  .book-description,
-  .contents-preview {
-    padding: 25px;
-  }
-  footer nav a {
-    display: block;
-    margin: 10px 0;
-  }
+.book-navigation a:hover,
+.chapter-navigation a:hover {
+  background: var(--gold);
+  color: white;
 }
