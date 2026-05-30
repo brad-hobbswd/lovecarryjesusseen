@@ -11,25 +11,24 @@ href="style.css">
 </head>
 <body>
 <main class="book-container">
-<section class="book-cover">
-<h1>
-What Love Was Carrying
-</h1>
-<h2>
-Because Jesus Saw Everything
-</h2>
-<p class="author-name">
-By Bradley Hobbs
-</p>
-<p>
-A journey through love, faith, endurance, difficult seasons, and the unwavering presence of Jesus, who never looked away.
+<section class="hero-banner">
+<img
+src="FD5F262C-CA86-4D98-80D8-877874C54ADC.png"
+alt="What Love Was Carrying: Because Jesus Saw Everything"
+class="hero-image">
+<p class="hero-intro">
+Some burdens arrive suddenly, demanding immediate attention. Others settle quietly upon the heart, becoming so familiar that their weight no longer feels unusual. What Love Was Carrying explores the hidden burdens that often accompany love, faith, hope, disappointment, perseverance, and healing while revealing the faithfulness of Jesus through every season of the journey.
 </p>
 <div class="book-navigation">
 <a href="intro.html">
 Begin Reading
 </a>
+<a href="contents.html">
+Contents
+</a>
 </div>
 </section>
+
 <section class="book-description">
 <p>
 Some burdens arrive suddenly, demanding immediate attention. Others settle quietly upon the heart, becoming so familiar that their weight no longer feels unusual. What Love Was Carrying explores the hidden burdens that often accompany love, faith, hope, disappointment, perseverance, and healing.
@@ -59,5 +58,20 @@ Chapter 1
 </ul>
 </section>
 </main>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+  document.getElementById("footer-placeholder").innerHTML = data;
+});
+</script>
+
+</body>
+</html>
 </body>
 </html>
