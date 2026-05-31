@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
 <title>
 Chapter 6 | Jesus Saw Everything
 </title>
+<meta
+name="description"
+content="Chapter 6 of What Love Was Carrying: Because Jesus Saw Everything by Bradley Hobbs.">
 <link
 rel="stylesheet"
 href="style.css">
@@ -118,5 +124,13 @@ Chapter 7 →
 </a>
 </nav>
 </main>
+<div id="footer-placeholder"></div>
+<script>
+fetch("footer.html")
+.then(response => response.text())
+.then(data => {
+document.getElementById("footer-placeholder").innerHTML = data;
+});
+</script>
 </body>
 </html>
