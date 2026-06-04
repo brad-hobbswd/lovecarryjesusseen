@@ -245,9 +245,10 @@ footer {
   margin-top: 80px;
   border-top: 4px solid var(--gold);
 }
-.footer-content {
-  max-width: 900px;
-  margin: 0 auto;
+.footer-content{
+max-width:800px;
+margin:0 auto;
+text-align:center;
 }
 .footer-content::before {
   content: "✦";
@@ -265,14 +266,28 @@ footer h3 {
 footer nav {
   margin: 35px 0;
 }
-footer nav a {
+footer nav a,
+.footer-links a{
   color: var(--light-gold);
-  margin: 0 15px;
-  font-weight: 600;
+  text-decoration:none;
+  margin:0 15px;
+  font-weight:600;
 }
-footer nav a:hover {
-  color: white;
+
+footer nav a:hover,
+.footer-links a:hover{
+  color:#ffffff;
 }
+
+.footer-links{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:30px;
+flex-wrap:wrap;
+margin:35px 0;
+}
+
 .footer-scripture {
   color: var(--light-gold);
   font-style: italic;
