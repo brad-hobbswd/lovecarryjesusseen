@@ -291,6 +291,45 @@ footer nav a:hover {
   font-size: 0.9rem;
   opacity: 0.8;
 }
+
+.footer-links,
+.donation-buttons{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:20px;
+flex-wrap:wrap;
+margin:35px 0;
+}
+
+.donate-btn{
+display:inline-block;
+padding:12px 24px;
+background:var(--gold);
+color:var(--deep-navy);
+text-decoration:none;
+font-weight:600;
+border-radius:30px;
+}
+
+.donate-btn:hover{
+background:var(--light-gold);
+color:var(--deep-navy);
+}
+
+footer p{
+max-width:850px;
+margin:0 auto 24px;
+text-align:center;
+}
+
+.footer-scripture{
+text-align:center;
+}
+
+.copyright{
+text-align:center;
+}
 /* ==================================================
    Responsive Design
 ================================================== */
