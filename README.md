@@ -1,77 +1,35 @@
-What Love Was Carrying
+# What Love Was Carrying
 
-Because Jesus Saw Everything
+A Christian encouragement project centered on the truth that people are seen by Jesus and that love carries compassion, hope, and restoration into difficult seasons.
 
-A memoir of love, faith, discernment, healing, and the unwavering faithfulness of Jesus.
+## Live Website
+https://brad-hobbswd.github.io/lovecarryjesusseen/
 
-This book follows a deeply personal journey through relationships, difficult seasons, unanswered questions, and the burdens that love sometimes carries. Through reflection, prayer, and experience, the story explores what happens when hope, responsibility, grace, and truth collide with realities that are difficult to understand.
+## Overview
+What Love Was Carrying: Because Jesus Saw Everything by Bradley Hobbs
 
-At the center of every chapter stands one unchanging truth:
+## Pages
+- `chapter1.html`
+- `chapter10.html`
+- `chapter2.html`
+- `chapter3.html`
+- `chapter4.html`
+- `chapter5.html`
+- `chapter6.html`
+- `chapter7.html`
+- `chapter8.html`
+- `chapter9.html`
+- `contents.html`
+- `intro.html`
 
-Jesus saw everything.
+## Technology
+Static website hosted with GitHub Pages, using HTML and the repository's supporting assets.
 
-⸻
+## Copyright and Permissions
+Copyright © 2026 Bradley Hobbs. All rights reserved.
 
-Read Online
+Original writing, devotional and teaching content, website copy, graphics, design, and source code are protected by copyright. Written permission is required before reuse, redistribution, modification, republication, or commercial use, except where applicable law permits otherwise. Third-party materials remain subject to their owners' terms.
 
-Live Site
-
-https://brad-hobbswd.github.io/lovecarryjesusseen
-
-⸻
-
-Contents
-
-* Introduction
-* Chapter 1 — The Day That Seemed Normal
-* Chapter 2 — The Familiar Feeling
-* Chapter 3 — The Memories That Returned
-* Chapter 4 — The Weight of Another Chance
-* Chapter 5 — The Cost of Carrying It
-* Chapter 6 — Jesus Saw Everything
-* Chapter 7 — What Discernment Revealed
-* Chapter 8 — When Peace Became a Teacher
-* Chapter 9 — The Burdens Love Was Never Meant to Carry
-* Chapter 10 — Because Jesus Saw Everything
-
-⸻
-
-About the Book
-
-Some burdens arrive suddenly and demand immediate attention.
-
-Others settle quietly upon the heart, becoming so familiar that their weight no longer feels unusual.
-
-What Love Was Carrying explores the hidden burdens that often accompany love, hope, disappointment, responsibility, perseverance, and healing. Through personal reflection and honest storytelling, each chapter reveals what became visible when long carried burdens could no longer remain hidden and how the presence of Jesus remained faithful through every season of the journey.
-
-This story is not about condemnation.
-
-This story is about truth.
-
-This story is about grace.
-
-This story is about healing.
-
-Most of all, this story is about Jesus.
-
-⸻
-
-Author
-
-Bradley Hobbs
-
-Writer, teacher, and follower of Jesus.
-
-⸻
-
-Copyright
-
-© Bradley Hobbs. All rights reserved.
-
-No portion of this publication may be reproduced, distributed, or transmitted in any form or by any means without prior written permission from the author.
-
-⸻
-
-Website
-
-https://brad-hobbswd.github.io/lovecarryjesusseen
+## Search Engine Files
+- [Sitemap](sitemap.xml)
+- [robots.txt](robots.txt)
